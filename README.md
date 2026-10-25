@@ -19,7 +19,7 @@ This is my origional code that i made and i couldnt fix the errors:
 ## Debuging
 
 ### First fix:
-
+First of all there was a lot of redundent code like 
 
 
 ### Second fix:
