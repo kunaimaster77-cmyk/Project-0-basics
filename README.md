@@ -19,8 +19,13 @@ This is my origional code that i made and i couldnt fix the errors:
 ## Debuging
 
 ### First fix:
-First of all there was a lot of redundent code like 
-
+I decided the start with temperature so i created a new file just for that seperatly and ther were quite a few bugs in that seperatly so i had to fix them:
+##
+First temp error: Temperature thresholds checked in the wrong order. (e.g if temp >= -5:)
+Almost every normal temperature satisfies this condition, so the later temperature conditions never get checked. The LED can therefore use the wrong colour.
+Fix: I recoded it from the highest threshold downwards, starting at 50°C and working towards −5°C.
+##
+Second temp error: there was a whole lotof redundent code i didnt realise that was sitting there so i celaned it all up (e.g in the origional code lines 
 
 ### Second fix:
 
