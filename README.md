@@ -25,7 +25,13 @@ First temp error: Temperature thresholds checked in the wrong order. (e.g if tem
 Almost every normal temperature satisfies this condition, so the later temperature conditions never get checked. The LED can therefore use the wrong colour.
 Fix: I recoded it from the highest threshold downwards, starting at 50°C and working towards −5°C.
 ##
-Second temp error: there was a whole lotof redundent code i didnt realise that was sitting there so i celaned it all up (e.g in the origional code lines 
+Second temp error: Redundent Code Cleanup. There was a whole lotof redundent code i didnt realise that was sitting there so i celaned it all up (e.g in the origional code lines 520 - 599 were all completly useless as i already had a way to output the colours on the led) Fix: I double checked they weret uselss and tested a saved copy without them and it worked better
+##
+Third error: whole function logic mixup. The function and logic was very messy and over completcated so with the new understanding i had learnt in school recently i re-coded some of the functions for the RGB LED and then for the led grid which leaned everything up a whole lot better. Fix : First I created a new function called get_temperatrue_colour() which primarly returned colour value to the corresponding temperature and the linked that with another function called temp_led() which actually outputed colours from parameters from get_temperature_colour(), through a whole function called show_temperature which was used to link the code to the button. Then to add back in the LED grid i used the exact same logic as my origional code and put it in a function, then called that function in show_temperature
+##
+Fourth error: Lack of repition
+##
+RESULT: The Fixed Temperature code: 
 
 ### Second fix:
 
