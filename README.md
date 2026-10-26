@@ -31,7 +31,7 @@ Third error: whole function logic mixup. The function and logic was very messy a
 ##
 Fourth error: Lack of repition. The code worked however i had to constantly press the button for it to change. Fix: i had to make a new function called activate_temperature_mode() which displayed the temperature symbol once and then defined the variable temperatur_mode as true. This triggers an while true which allows for show_temperature to run constantly
 ##
-RESULT: The Fixed Temperature code: [View the new temperature code](code/temperature_code.py)
+RESULT: The Fixed Temperature code: [View the new temperature code](https://github.com/kunaimaster77-cmyk/Project-0-basics/blob/f82f1b50918aaf40d0db4884941a5d7230a4a169/code/temperature_code)
 
 ### Second fix:
 
