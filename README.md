@@ -31,7 +31,7 @@ Third error: whole function logic mixup. The function and logic was very messy a
 ##
 Fourth error: Lack of repition. The code worked however i had to constantly press the button for it to change. Fix: i had to make a new function called activate_temperature_mode() which displayed the temperature symbol once and then defined the variable temperatur_mode as true. This triggers an while true which allows for show_temperature to run constantly
 ##
-RESULT: The Fixed Temperature code: 
+RESULT: The Fixed Temperature code: [View the original MicroPython code](code/Temperature Code.py)
 
 ### Second fix:
 
